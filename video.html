@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteligencia Artificial</title>
+  
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="Index.html">
+        <div class="shake"><i class="bi bi-cpu me-2"></i> Inteligencia Artificial</div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <div class="girar"><li class="nav-item"><a class="nav-link" href="Index.html">Inicio</a></li></div>
+          
+          
+          <div class="girar"><li class="nav-item"><a class="nav-link" href="imagenes.html">IA de Imágenes</a></li></div>
+          <div class="girar"><li class="nav-item"><a class="nav-link" href="codigo.html">IA de Texto</a></li></div>
+          <div class="girar"><li class="nav-item"><a class="nav-link" href="video.html">IA de Video</a></li></div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="py-5 bg-primary text-white text-center">
+    <div class="container">
+      <h1 class="fw-bold">Inteligencia Artificial Generadora de Videos</h1>
+      <p class="lead">Explorando cómo las IA crean arte y transforman ideas en videos.</p>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="container my-5">
+    <h2 class="mb-4">¿Qué es una IA generadora de video?</h2>
+    <p>
+      Las IA generadoras de videos son herramientas que utilizan inteligencia artificial para crear, editar o modificar videos a partir de texto, imágenes o clips existentes. Estas tecnologías están avanzando rápidamente y tienen aplicaciones tanto creativas como controvertidas. Aquí te explico los aspectos clave:
+    </p>
+
+    <!-- Cards -->
+    <div class="row g-4 mt-4">
+      
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="OpenAI-sora.webp" class="card-img-top" alt="DALL·E">
+          <div class="card-body">
+            <h5 class="card-title">Sora (OpenAI)</h5>
+            <p class="card-text">Genera videos realistas a partir de texto (aún en fase de prueba).</p>
+          </div>
+          <div class="card-footer text-center">
+            <div class="flicker"><a href="https://openai.com/es-419/index/dall-e-3/" class="btn btn-primary">Probar</a></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="runwayml.png" class="card-img-top" alt="MidJourney">
+          <div class="card-body">
+            <h5 class="card-title">Runway ML</h5>
+            <p class="card-text">Permite editar y generar videos con efectos avanzados.</p>
+          </div>
+          <div class="card-footer text-center">
+            <div class="flicker"><a href="https://www.midjourney.com/home" class="btn btn-primary">Probar</a></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="ed9e008921d04ea69e3e006db1205aad.jpg" class="card-img-top" alt="Stable Diffusion">
+          <div class="card-body">
+            <h5 class="card-title">Pika Labs</h5>
+            <p class="card-text">Crea videos cortos a partir de prompts de texto.</p>
+          </div>
+          <div class="card-footer text-center">
+            <div class="flicker"><a href="https://stablediffusionweb.com/es" class="btn btn-primary">Probar</a></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm">
+          <img src="heygen-optimized.webp" class="card-img-top" alt="Leonardo.AI">
+          <div class="card-body">
+            <h5 class="card-title">HeyGen</h5>
+            <p class="card-text">Crea avatares y videos con voces clonadas.</p>
+          </div>
+          <div class="card-footer text-center">
+            
+            
+            
+            <div class="flicker"><a href="https://leonardo.ai/" class="btn btn-primary">Probar</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p>Estas herramientas usan redes neuronales y grandes bases de datos de imágenes para generar contenido visual nuevo.</p>
+    <h2>¿Cómo funcionan?</h2>
+    <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Entrenamiento
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Aprenden de grandes bases de datos de videos, imágenes y audio.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Generación
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Pueden crear videos desde cero usando descripciones de texto (prompts) o transformar videos existentes (ej.: cambiar estilos, añadir elementos).
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Técnicas comunes
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <ul>
+            <li><strong>Difusión (Diffusion Models):</strong> Similar a las IA de imágenes, pero aplicado a secuencias de video.</li>
+            <li><strong>Redes Generativas Adversarias (GANs):</strong> Dos modelos compiten para mejorar la calidad del video generado.</li>
+            <li><strong>Modelos de lenguaje + imágenes:</strong> Combinan IA de texto e imágenes para generar secuencias coherentes.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<h2>Aplicaciones</h2>
+
+<ul class="list-group">
+  <li class="list-group-item"><strong>Cine y animación:</strong> Generar escenas o efectos visuales.</li>
+  <li class="list-group-item"><strong>Publicidad:</strong> Crear anuncios personalizados rápidamente.</li>
+  <li class="list-group-item"><strong>Educación:</strong> Videos explicativos generados automáticamente.</li>
+  <li class="list-group-item"><strong>Redes sociales:</strong> Contenido viral o memes generados por IA.</li>
+  <li class="list-group-item"><strong>Deepfakes:</strong> Suplantación de rostros o voces (con riesgos éticos).</li>
+</ul>
+  </main>
+  <h2>Ejemplo de video generado</h2>
+  <div class="vida d-flex justify-content-center">
+  <div id="carouselExampleCaptions" class="carousel slide w-75"> 
+  
+  
+
+<div class="video">
+<iframe src="https://www.youtube.com/embed/2cIGNjt-ZjY" width="640" height="480" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <small>Trabajo hecho por Danilo Vicente - 4to A</small>
+  </footer>
+
+  <!-- Script propio -->
+  <script src="script.js"></script>
+</body>
+</html>
